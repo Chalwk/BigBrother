@@ -1,0 +1,62 @@
+name: ✨ Feature Request
+description: 💡 Suggest enhancements for the plugin.
+title: '[FEATURE] <title>'
+labels: [ 'Feature', 'Needs Review' ]
+assignees:
+  - Chalwk
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **📋 Feature Request Submission**
+        > Thank you for your interest in enhancing my plugin. Please provide a clear and detailed description of your feature request. Your input is invaluable to improving the experience for all players.
+        
+        ---
+
+  - type: checkboxes
+    id: server-version
+    attributes:
+      label: 🗺️ Server Version
+      description: "Indicate the Minecraft server version you are utilizing."
+      options:
+        - label: "1.20"
+        - label: "1.19"
+        - label: "1.18"
+        - label: "Other (please specify in details)"
+
+  - type: checkboxes
+    id: feature-requires
+    attributes:
+      label: ⚙️ Feature Requirements
+      description: "Does your feature request require specific plugins or dependencies?"
+      options:
+        - label: Yes 👍
+        - label: No ❌
+        - label: Unsure ❓
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 📝 Feature Details
+      description: "Provide a comprehensive description of your feature request. Include any relevant use cases or examples."
+      placeholder: "Write your feature description here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: potential-impact
+    attributes:
+      label: 📈 Potential Impact
+      description: "Describe how this feature could enhance gameplay experience or server performance."
+      placeholder: "Explain the potential impact..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: 🗒️ Additional Notes
+      description: "Any other information that might be relevant to your feature request."
+      placeholder: "Include any other notes here..."
+    validations:
+      required: false

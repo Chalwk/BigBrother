@@ -1,0 +1,64 @@
+#========================================#
+#  Big Brother V1.0.1 - Configuration File
+#========================================#
+
+on-enable: 'BigBrother-{version} has been enabled'
+on-disable: 'BigBrother has been disabled'
+
+# Message displayed when (this) configuration is reload:
+config-reload: '&3[&6&lBig Brother&3] &aConfiguration has been reloaded'
+
+# Message displayed when a player doesn't have permission to execute (any) BigBrother command:
+no-permission: '&3[&6&lBig Brother&3] &cYou do not have permission to use this command'
+
+# Message displayed when an admin tries to toggle a module that doesn't exist:
+invalid-module: '&3[&6&lBig Brother&3] &cInvalid module. &7Valid modules: &6commands, signs, anvils, books, social'
+
+# Messages displayed when an admin toggles a module:
+toggle-message: '&3[&6&lBig Brother&3] &7You have &6{state} &7{module}'
+toggle-other: '&3[&6&lBig Brother&3] &7You have &6{state} &7{module} for &6{player}&7'
+invalid-player: '&3[&6&lBig Brother&3] &cInvalid player'
+
+#================================================================#
+command-spy:
+  notification: '&3[&6&lCMD SPY&3] &7{player}: &7{cmd}'
+  hidden:
+    - '/msg'
+    - '/reply'
+    - '/cmi msg'
+    - '/cmi reply'
+    - '/cmi r'
+    - '/r'
+#================================================================#
+
+#================================================================#
+sign-spy:
+  notification: '&3[&6&lSIGN SPY&3] &7{player}: \n&7{line1}\n&7{line2}\n&7{line3}\n&7{line4}'
+#================================================================#
+
+#================================================================#
+anvil-spy:
+  notification: '&3[&6&lANVIL SPY&3] &7{player} renamed &b{item} &7to &b{newname}'
+#================================================================#
+
+#================================================================#
+book-spy:
+  notification: '&3[&6&lBOOK SPY&3] &7{player}: &7{text}'
+#================================================================#
+
+#================================================================#
+social-spy:
+  notification: '&3[&6&lSOCIAL SPY&3] &7{player}: {cmd}'
+  trigger-commands:
+    - '/msg'
+    - '/reply'
+    - '/cmi msg'
+    - '/cmi reply'
+    - '/cmi r'
+    - '/r'
+#================================================================#
+
+#================================================================#
+portal-spy:
+  notification: '&3[&6&lPORTAL SPY&3] &7{player} has used a portal to &b{destination}'
+#================================================================#

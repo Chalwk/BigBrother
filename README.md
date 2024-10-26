@@ -1,1 +1,110 @@
-Monitor player interactions with anvils, books, commands, portals, signs, and private messages.
+# BigBrother Plugin
+
+**BigBrother** is an admin utility plugin for Minecraft servers, offering a suite of surveillance features that allows
+administrators to monitor and track user interactions with various game objects and actions. From anvils to private
+messages, BigBrother keeps admins informed in real-time.
+
+## Features
+
+BigBrother sends notifications to admins whenever a user performs specific actions, such as:
+
+- **AnvilSpy**: Notifies when a user interacts with an anvil, displaying the item's name before and after interaction.
+- **BookSpy**: Notifies when a user writes in a Book and Quill.
+- **CommandSpy**: Notifies when any command is executed by a player.
+- **PortalSpy**: Notifies when a player travels through a teleport portal (e.g., Nether or End).
+- **SignSpy**: Notifies when a player interacts with a sign.
+- **SocialSpy**: Notifies when a player sends a private message.
+
+These notifications provide insight into player activities, helping maintain server integrity.
+
+## Commands
+
+The primary command for the **BigBrother** plugin is `/bigbrother`. Use the following subcommands to manage different
+functionalities:
+
+- **Reload Configurations:** `reload`
+- **Toggle Command Spy:** `commands <optional user>`
+- **Toggle Sign Spy:** `signs <optional user>`
+- **Toggle Anvil Spy:** `anvils <optional user>`
+- **Toggle Book Spy:** `books <optional user>`
+- **Toggle Social Spy:** `social <optional user>`
+- **Toggle Portal Spy:** `portals <optional user>`
+
+### Additional Information
+
+Using `/bigbrother` by itself will enable or disable BigBrother for the user executing the command.
+
+## Permissions
+
+BigBrother includes a robust permission system to allow fine-grained control over each feature. Here is a list of
+available permissions:
+
+- **bigbrother.\***
+    - Grants access to all BigBrother features.
+    - **Default**: Operator (op)
+    - **Children**:
+        - **bigbrother.use**: Allows usage of the `/bigbrother` command.
+        - **bigbrother.reload**: Allows reloading of the BigBrother plugin.
+        - **bigbrother.spy.\***: Grants access to all spying features.
+
+### Specific Spy Permissions
+
+Each spy feature has its own set of permissions, allowing for more customized control.
+
+- **bigbrother.commandspy.\***
+    - Grants access to command spying.
+    - **Children**:
+        - **bigbrother.commandspy.toggle**: Allows toggling command spy.
+        - **bigbrother.commandspy.toggle.others**: Allows toggling command spy for other players.
+
+- **bigbrother.signspy.\***
+    - Grants access to sign spying.
+    - **Children**:
+        - **bigbrother.signspy.toggle**: Allows toggling sign spy.
+        - **bigbrother.signspy.toggle.others**: Allows toggling sign spy for other players.
+
+- **bigbrother.anvilspy.\***
+    - Grants access to anvil spying.
+    - **Children**:
+        - **bigbrother.anvilspy.toggle**: Allows toggling anvil spy.
+        - **bigbrother.anvilspy.toggle.others**: Allows toggling anvil spy for other players.
+
+- **bigbrother.bookspy.\***
+    - Grants access to book spying.
+    - **Children**:
+        - **bigbrother.bookspy.toggle**: Allows toggling book spy.
+        - **bigbrother.bookspy.toggle.others**: Allows toggling book spy for other players.
+
+- **bigbrother.socialspy.\***
+    - Grants access to social spying.
+    - **Children**:
+        - **bigbrother.socialspy.toggle**: Allows toggling social spy.
+        - **bigbrother.socialspy.toggle.others**: Allows toggling social spy for other players.
+
+- **bigbrother.portalspy.\***
+    - Grants access to portal spying.
+    - **Children**:
+        - **bigbrother.portalspy.toggle**: Allows toggling portal spy.
+        - **bigbrother.portalspy.toggle.others**: Allows toggling portal spy for other players.
+
+## Installation
+
+1. Download the latest version of BigBrother and place it in your server's `plugins` folder.
+2. Restart or reload your server to enable the plugin.
+3. Configure settings in `config.yml` as needed.
+4. Use `/bigbrother` or `/bb` to access the primary command.
+
+## License
+
+This project is licensed under [MIT License](https://github.com/Chalwk/BigBrother/blob/main/LICENSE).
+
+## 📝 Issue Submission Forms
+
+To streamline the process of submitting issues, please use the following forms:
+
+- **Feature Request Form**: [Click here to submit a feature request](TODO: FILL THIS IN)
+- **Bug Report Form**: [Click here to report a bug](TODO: FILL THIS IN)
+
+---
+
+*Big Brother is always watching!*

@@ -1,0 +1,82 @@
+name: BigBrother
+version: '${project.version}'
+main: com.chalwk.BigBrother
+api-version: '1.20'
+authors: [ chalwk ]
+description: Big Brother is watching you!
+
+commands:
+  bigbrother:
+    description: Primary command for BigBrother plugin
+    usage: /<command>
+    aliases: [ bb ]
+
+permissions:
+  bigbrother.*:
+    description: Grants access to all BigBrother features
+    default: op
+    children:
+      bigbrother.use: true
+      bigbrother.reload: true
+      bigbrother.spy.*: true
+
+  bigbrother.use:
+    description: Allows usage of the /bigbrother command
+    default: op
+
+  bigbrother.reload:
+    description: Allows reloading of the BigBrother plugin
+    default: op
+
+  bigbrother.spy.*:
+    description: Grants access to all spying features
+    default: op
+    children:
+      bigbrother.commandspy.*: true
+      bigbrother.signspy.*: true
+      bigbrother.anvilspy.*: true
+      bigbrother.bookspy.*: true
+      bigbrother.socialspy.*: true
+      bigbrother.portalspy.*: true
+
+  bigbrother.commandspy.*:
+    description: Permissions for command spying
+    default: op
+    children:
+      bigbrother.commandspy.toggle: true
+      bigbrother.commandspy.toggle.others: true
+
+  bigbrother.signspy.*:
+    description: Permissions for sign spying
+    default: op
+    children:
+      bigbrother.signspy.toggle: true
+      bigbrother.signspy.toggle.others: true
+
+  bigbrother.anvilspy.*:
+    description: Permissions for anvil spying
+    default: op
+    children:
+      bigbrother.anvilspy.toggle: true
+      bigbrother.anvilspy.toggle.others: true
+
+  bigbrother.bookspy.*:
+    description: Permissions for book spying
+    default: op
+    children:
+      bigbrother.bookspy.toggle: true
+      bigbrother.bookspy.toggle.others: true
+
+  bigbrother.socialspy.*:
+    description: Permissions for social spying
+    default: op
+    children:
+      bigbrother.socialspy.toggle: true
+      bigbrother.socialspy.toggle.others: true
+
+  bigbrother.portalspy.*:
+    description: Grants access to all portal spying features
+    default: op
+    children:
+      bigbrother.portalspy.toggle: true
+      bigbrother.portalspy.toggle.others: true

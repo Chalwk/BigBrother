@@ -1,0 +1,48 @@
+name: 🐞 Bug Report
+description: ⚠️ Report bugs, glitches, or issues encountered with the plugin.
+title: "[BUG] <title>"
+labels: [ "Bug", "Needs Triage" ]
+assignees: Chalwk
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **📌 Bug Overview**
+        > Please provide a clear and concise description of the bug you encountered, including steps to reproduce it and any relevant details. Use headers (`#`) or lists (`-`) to organize your thoughts effectively.
+
+  - type: textarea
+    id: description-the-bug
+    attributes:
+      label: 🔄 Bug Description
+      description: A detailed description of the bug.
+      placeholder: "Describe the bug in detail, including the steps to reproduce it."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 🎯 Expected Behavior
+      description: Describe what should have happened if the bug hadn't occurred.
+      placeholder: "Explain the expected behavior clearly."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Additional Context
+      description: Provide any other context or information about the bug here.
+      placeholder: "Include further context or relevant information."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **📷 Screenshots**
+        > If applicable, please include any relevant screenshots to help illustrate the bug. 
+        >
+        > 🙌 Thank you for your contribution!
+        >
+        > **Your effort in reporting bugs is invaluable to improving the quality of my plugins**
