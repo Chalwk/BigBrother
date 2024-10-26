@@ -1,12 +1,14 @@
 # BigBrother Plugin
 
-**BigBrother** is an admin utility plugin for Minecraft servers, offering a suite of surveillance features that allows
+![BigBrother](assets/logo.png)
+
+**BigBrother** is an admin utility plugin for Minecraft servers, offering a suite of surveillance features that allow
 administrators to monitor and track user interactions with various game objects and actions. From anvils to private
 messages, BigBrother keeps admins informed in real-time.
 
 ## Features
 
-BigBrother sends notifications to admins whenever a user performs specific actions, such as:
+BigBrother sends notifications to admins whenever a user performs specific actions, including:
 
 - **AnvilSpy**: Notifies when a user interacts with an anvil, displaying the item's name before and after interaction.
 - **BookSpy**: Notifies when a user writes in a Book and Quill.
@@ -22,13 +24,15 @@ These notifications provide insight into player activities, helping maintain ser
 The primary command for the **BigBrother** plugin is `/bigbrother`. Use the following subcommands to manage different
 functionalities:
 
-- **Reload Configurations:** `reload`
-- **Toggle Command Spy:** `commands <optional user>`
-- **Toggle Sign Spy:** `signs <optional user>`
-- **Toggle Anvil Spy:** `anvils <optional user>`
-- **Toggle Book Spy:** `books <optional user>`
-- **Toggle Social Spy:** `social <optional user>`
-- **Toggle Portal Spy:** `portals <optional user>`
+| Command                       | Description                   |
+|-------------------------------|-------------------------------|
+| `/bigbrother reload`          | Reload configurations         |
+| `/bigbrother commands <user>` | Toggle command spy for a user |
+| `/bigbrother signs <user>`    | Toggle sign spy for a user    |
+| `/bigbrother anvils <user>`   | Toggle anvil spy for a user   |
+| `/bigbrother books <user>`    | Toggle book spy for a user    |
+| `/bigbrother social <user>`   | Toggle social spy for a user  |
+| `/bigbrother portals <user>`  | Toggle portal spy for a user  |
 
 ### Additional Information
 
@@ -36,56 +40,40 @@ Using `/bigbrother` by itself will enable or disable BigBrother for the user exe
 
 ## Permissions
 
-BigBrother includes a robust permission system to allow fine-grained control over each feature. Here is a list of
-available permissions:
+BigBrother includes a robust permission system for fine-grained control over each feature. Below is a list of available
+permissions:
 
-- **bigbrother.\***
-    - Grants access to all BigBrother features.
-    - **Default**: Operator (op)
-    - **Children**:
-        - **bigbrother.use**: Allows usage of the `/bigbrother` command.
-        - **bigbrother.reload**: Allows reloading of the BigBrother plugin.
-        - **bigbrother.spy.\***: Grants access to all spying features.
+| Permission            | Description                                | Default       |
+|-----------------------|--------------------------------------------|---------------|
+| **bigbrother.***      | Grants access to all BigBrother features.  | Operator (op) |
+| **bigbrother.use**    | Allows usage of the `/bigbrother` command. |               |
+| **bigbrother.reload** | Allows reloading of the BigBrother plugin. |               |
+| **bigbrother.spy.***  | Grants access to all spying features.      |               |
 
 ### Specific Spy Permissions
 
-Each spy feature has its own set of permissions, allowing for more customized control.
+Each spy feature has its own set of permissions, allowing for customized control.
 
-- **bigbrother.commandspy.\***
-    - Grants access to command spying.
-    - **Children**:
-        - **bigbrother.commandspy.toggle**: Allows toggling command spy.
-        - **bigbrother.commandspy.toggle.others**: Allows toggling command spy for other players.
-
-- **bigbrother.signspy.\***
-    - Grants access to sign spying.
-    - **Children**:
-        - **bigbrother.signspy.toggle**: Allows toggling sign spy.
-        - **bigbrother.signspy.toggle.others**: Allows toggling sign spy for other players.
-
-- **bigbrother.anvilspy.\***
-    - Grants access to anvil spying.
-    - **Children**:
-        - **bigbrother.anvilspy.toggle**: Allows toggling anvil spy.
-        - **bigbrother.anvilspy.toggle.others**: Allows toggling anvil spy for other players.
-
-- **bigbrother.bookspy.\***
-    - Grants access to book spying.
-    - **Children**:
-        - **bigbrother.bookspy.toggle**: Allows toggling book spy.
-        - **bigbrother.bookspy.toggle.others**: Allows toggling book spy for other players.
-
-- **bigbrother.socialspy.\***
-    - Grants access to social spying.
-    - **Children**:
-        - **bigbrother.socialspy.toggle**: Allows toggling social spy.
-        - **bigbrother.socialspy.toggle.others**: Allows toggling social spy for other players.
-
-- **bigbrother.portalspy.\***
-    - Grants access to portal spying.
-    - **Children**:
-        - **bigbrother.portalspy.toggle**: Allows toggling portal spy.
-        - **bigbrother.portalspy.toggle.others**: Allows toggling portal spy for other players.
+| Permission                              | Description                                    |
+|-----------------------------------------|------------------------------------------------|
+| **bigbrother.commandspy.***             | Grants access to command spying.               |
+| **bigbrother.commandspy.toggle**        | Allows toggling command spy.                   |
+| **bigbrother.commandspy.toggle.others** | Allows toggling command spy for other players. |
+| **bigbrother.signspy.***                | Grants access to sign spying.                  |
+| **bigbrother.signspy.toggle**           | Allows toggling sign spy.                      |
+| **bigbrother.signspy.toggle.others**    | Allows toggling sign spy for other players.    |
+| **bigbrother.anvilspy.***               | Grants access to anvil spying.                 |
+| **bigbrother.anvilspy.toggle**          | Allows toggling anvil spy.                     |
+| **bigbrother.anvilspy.toggle.others**   | Allows toggling anvil spy for other players.   |
+| **bigbrother.bookspy.***                | Grants access to book spying.                  |
+| **bigbrother.bookspy.toggle**           | Allows toggling book spy.                      |
+| **bigbrother.bookspy.toggle.others**    | Allows toggling book spy for other players.    |
+| **bigbrother.socialspy.***              | Grants access to social spying.                |
+| **bigbrother.socialspy.toggle**         | Allows toggling social spy.                    |
+| **bigbrother.socialspy.toggle.others**  | Allows toggling social spy for other players.  |
+| **bigbrother.portalspy.***              | Grants access to portal spying.                |
+| **bigbrother.portalspy.toggle**         | Allows toggling portal spy.                    |
+| **bigbrother.portalspy.toggle.others**  | Allows toggling portal spy for other players.  |
 
 ## Installation
 
@@ -96,7 +84,7 @@ Each spy feature has its own set of permissions, allowing for more customized co
 
 ## License
 
-This project is licensed under [MIT License](https://github.com/Chalwk/BigBrother/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Chalwk/BigBrother/blob/main/LICENSE).
 
 ## 📝 Issue Submission Forms
 
