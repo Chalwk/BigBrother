@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="BigBrother" width="128" height="128">
 
-**BigBrother** is an admin utility plugin for Minecraft servers, offering surveillance features that allow
+**BigBrother** is a small admin utility plugin for Minecraft servers, offering surveillance features that allow
 administrators to monitor and track user interactions with various game objects and actions. From anvils to private
 messages, BigBrother keeps admins informed in real time.
 
@@ -25,15 +25,15 @@ These notifications provide insight into player activities, helping maintain ser
 The primary command for the **BigBrother** plugin is `/bigbrother`. Use the following subcommands to manage different
 functionalities:
 
-| Command                       | Description                   |
-|-------------------------------|-------------------------------|
-| `/bigbrother reload`          | Reload configurations         |
-| `/bigbrother commands <user>` | Toggle command spy for a user |
-| `/bigbrother signs <user>`    | Toggle sign spy for a user    |
-| `/bigbrother anvils <user>`   | Toggle anvil spy for a user   |
-| `/bigbrother books <user>`    | Toggle book spy for a user    |
-| `/bigbrother social <user>`   | Toggle social spy for a user  |
-| `/bigbrother portals <user>`  | Toggle portal spy for a user  |
+| Command           | Description                   |
+|-------------------|-------------------------------|
+| `reload`          | Reload configurations         |
+| `commands <user>` | Toggle command spy for a user |
+| `signs <user>`    | Toggle sign spy for a user    |
+| `anvils <user>`   | Toggle anvil spy for a user   |
+| `books <user>`    | Toggle book spy for a user    |
+| `social <user>`   | Toggle social spy for a user  |
+| `portals <user>`  | Toggle portal spy for a user  |
 
 ### Additional Information
 
@@ -100,8 +100,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 To streamline the process of submitting issues, please use the following forms:
 
-- **Feature Request Form**: [Click here to submit a feature request](TODO: FILL THIS IN)
-- **Bug Report Form**: [Click here to report a bug](TODO: FILL THIS IN)
+- **Feature Request Form
+  **: [Click here to submit a feature request](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Feature%2CNeeds+Review&projects=&template=FEATURE_REQUEST.yaml&title=%5BFEATURE%5D+%3Ctitle%3E)
+- **Bug Report Form
+  **: [Click here to report a bug](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Bug%2CNeeds+Triage&projects=&template=BUG_REPORT.yaml&title=%5BBUG%5D+%3Ctitle%3E)
 
 ---
 
