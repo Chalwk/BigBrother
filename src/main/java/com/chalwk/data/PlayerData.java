@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 
 public class PlayerData {
 
+    private Player lastMessagedPlayer;
     private final Player player;
     public boolean activationState;
     public boolean commands;
@@ -65,5 +66,13 @@ public class PlayerData {
 
     public void setPortals(boolean portals) {
         this.portals = portals;
+    }
+
+    public Player getLastMessagedPlayer() {
+        return lastMessagedPlayer;
+    }
+
+    public void setLastMessagedPlayer(Player receiver) {
+        this.lastMessagedPlayer = receiver;
     }
 }

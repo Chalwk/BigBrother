@@ -29,9 +29,7 @@ public class Config {
     public static String CONFIG_RELOAD;
     public static String INVALID_PLAYER;
 
-    public static List<String> SOCIAL_SPY_TRIGGER_COMMANDS;
     public static List<String> COMMAND_SPY_HIDDEN_LIST;
-
 
     public static void loadSettings(FileConfiguration config) {
 
@@ -52,7 +50,6 @@ public class Config {
         CONFIG_RELOAD = config.getString("config-reload");
         INVALID_PLAYER = config.getString("invalid-player");
 
-        SOCIAL_SPY_TRIGGER_COMMANDS = config.getStringList("social-spy.trigger-commands");
         COMMAND_SPY_HIDDEN_LIST = config.getStringList("command-spy.hidden");
     }
 }

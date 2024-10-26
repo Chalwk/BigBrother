@@ -15,7 +15,8 @@ import org.bukkit.event.player.PlayerEditBookEvent;
 import org.bukkit.inventory.meta.BookMeta;
 
 import static com.chalwk.Config.BOOK_SPY_NOTIFICATION;
-import static com.chalwk.Misc.*;
+import static com.chalwk.Misc.canUseSpyFeature;
+import static com.chalwk.Misc.send;
 
 public class BookSpy implements Listener {
 
@@ -30,11 +31,9 @@ public class BookSpy implements Listener {
         }
 
         String bookText = String.join("\n", newBookMeta.getPages());
-
         for (Player admin : Bukkit.getOnlinePlayers()) {
             if (!admin.getName().equals(playerName) && canUseSpyFeature(admin, "bookspy")) {
                 String notification = BOOK_SPY_NOTIFICATION;
-
                 notification = notification
                         .replace("{player}", playerName)
                         .replace("{text}", bookText.trim());

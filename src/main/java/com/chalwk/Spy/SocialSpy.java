@@ -15,17 +15,20 @@ import static com.chalwk.Misc.send;
 
 public class SocialSpy {
 
-    public static boolean socialSpy(CommandSender sender, String command) {
+    public static boolean socialSpy(CommandSender sender, Player receiver, String message) {
         Player player = (Player) sender;
-        String playerName = player.getName();
+        String senderName = player.getName();
+        String receiverName = receiver.getName();
 
         for (Player admin : player.getServer().getOnlinePlayers()) {
-            if (!admin.getName().equals(playerName) && canUseSpyFeature(admin, "socialspy")) {
+            String name = admin.getName();
+            if (!name.equals(senderName) && !name.equals(receiverName) && canUseSpyFeature(admin, "socialspy")) {
                 String notification = SOCIAL_SPY_NOTIFICATION;
                 assert notification != null;
                 notification = notification
-                        .replace("{player}", playerName)
-                        .replace("{cmd}", command);
+                        .replace("{sender}", senderName)
+                        .replace("{receiver}", receiverName)
+                        .replace("{message}", message);
                 send(admin, notification);
                 return true;
             }

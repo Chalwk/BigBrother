@@ -18,18 +18,21 @@ import static com.chalwk.Misc.send;
 
 public class SignSpy implements Listener {
 
+    private boolean isSignEmpty(String[] lines) {
+        for (String line : lines) {
+            if (!line.isEmpty()) return false;
+        }
+        return true;
+    }
+
     @EventHandler
     public void onSignChange(SignChangeEvent event) {
         String[] lines = event.getLines();
-
-        if (lines[0].isEmpty() && lines[1].isEmpty() && lines[2].isEmpty() && lines[3].isEmpty()) {
-            return;
-        }
+        if (isSignEmpty(lines)) return;
 
         Player player = event.getPlayer();
         String playerName = player.getName();
-        String notification = SIGN_SPY_NOTIFICATION
-                .replace("{player}", playerName);
+        String notification = SIGN_SPY_NOTIFICATION.replace("{player}", playerName);
 
         for (int i = 0; i < lines.length; i++) {
             notification = notification.replace("{line" + (i + 1) + "}", lines[i]);

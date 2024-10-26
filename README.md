@@ -76,6 +76,15 @@ Each spy feature has its own set of permissions, allowing for customized control
 | **bigbrother.portalspy.toggle**         | Allows toggling portal spy.                    |
 | **bigbrother.portalspy.toggle.others**  | Allows toggling portal spy for other players.  |
 
+## Commands That Trigger Social Spy
+
+The following commands currently trigger Social Spy notifications in BigBrother. At present, these commands are
+hardcoded and may be made configurable in future updates:
+
+`/bmsg`, `/bpm`, `/breply`, `/cmi msg`, `/cmi r`, `/cmi reply`, `/cmi t`, `/cmi tell`, `/cmi whisper`, `/emsg`, `/er`,
+`/ereply`, `/etell`, `/ewhisper`, `/m`, `/message`, `/mreply`, `/msg`, `/msgchat`, `/pm`, `/pmc`, `/privmsg`, `/r`,
+`/reply`, `/t`, `/tell`, `/whisper`
+
 ## Installation
 
 1. Download the latest version of BigBrother and place it in your server's `plugins` folder.
