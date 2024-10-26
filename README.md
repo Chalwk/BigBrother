@@ -1,6 +1,6 @@
 # BigBrother Plugin
 
-![BigBrother](assets/logo.png)
+<img src="assets/logo.png" alt="BigBrother" width="128" height="128">
 
 **BigBrother** is an admin utility plugin for Minecraft servers, offering a suite of surveillance features that allow
 administrators to monitor and track user interactions with various game objects and actions. From anvils to private
