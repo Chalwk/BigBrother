@@ -84,7 +84,7 @@ Each spy feature has its own set of permissions, allowing for customized control
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/Chalwk/BigBrother/blob/main/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## 📝 Issue Submission Forms
 
