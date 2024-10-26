@@ -100,10 +100,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 To streamline the process of submitting issues, please use the following forms:
 
-- **Feature Request Form
-  **: [Click here to submit a feature request](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Feature%2CNeeds+Review&projects=&template=FEATURE_REQUEST.yaml&title=%5BFEATURE%5D+%3Ctitle%3E)
-- **Bug Report Form
-  **: [Click here to report a bug](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Bug%2CNeeds+Triage&projects=&template=BUG_REPORT.yaml&title=%5BBUG%5D+%3Ctitle%3E)
+- [Click here to submit a feature request](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Feature%2CNeeds+Review&projects=&template=FEATURE_REQUEST.yaml&title=%5BFEATURE%5D+%3Ctitle%3E)
+- [Click here to report a bug](https://github.com/Chalwk/BigBrother/issues/new?assignees=Chalwk&labels=Bug%2CNeeds+Triage&projects=&template=BUG_REPORT.yaml&title=%5BBUG%5D+%3Ctitle%3E)
 
 ---
 
