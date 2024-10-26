@@ -2,15 +2,16 @@
 
 <img src="assets/logo.png" alt="BigBrother" width="128" height="128">
 
-**BigBrother** is an admin utility plugin for Minecraft servers, offering a suite of surveillance features that allow
+**BigBrother** is an admin utility plugin for Minecraft servers, offering surveillance features that allow
 administrators to monitor and track user interactions with various game objects and actions. From anvils to private
-messages, BigBrother keeps admins informed in real-time.
+messages, BigBrother keeps admins informed in real time.
 
 ## Features
 
 BigBrother sends notifications to admins whenever a user performs specific actions, including:
 
-- **AnvilSpy**: Notifies when a user interacts with an anvil, displaying the item's name before and after interaction.
+- **AnvilSpy**: Notifies when a user interacts with an anvil, displaying the item's name before and after the
+  interaction.
 - **BookSpy**: Notifies when a user writes in a Book and Quill.
 - **CommandSpy**: Notifies when any command is executed by a player.
 - **PortalSpy**: Notifies when a player travels through a teleport portal (e.g., Nether or End).
