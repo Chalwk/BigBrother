@@ -23,18 +23,21 @@ public class Commands {
     private static final BigBrother instance = BigBrother.getInstance();
 
     public static boolean commandHandler(CommandSender sender, String[] args) {
-        Player player = (Player) sender;
-        PlayerData playerData = getData(player);
 
-        if (args.length == 0) {
-            toggleActivation(player);
-        } else {
-            String command = args[0].toLowerCase();
-            if (command.equals("reload") && hasPermission(player, "bigbrother.reload")) {
-                instance.reloadConfig();
-                send(player, CONFIG_RELOAD);
+        Player player = (Player) sender;
+        if (hasPermission(player, "bigbrother.use")) {
+            PlayerData playerData = getData(player);
+
+            if (args.length == 0) {
+                toggleActivation(player);
             } else {
-                handleModuleCommand(player, command, playerData, args);
+                String command = args[0].toLowerCase();
+                if (command.equals("reload") && hasPermission(player, "bigbrother.reload")) {
+                    instance.reloadConfig();
+                    send(player, CONFIG_RELOAD);
+                } else {
+                    handleModuleCommand(player, command, playerData, args);
+                }
             }
         }
         return true;

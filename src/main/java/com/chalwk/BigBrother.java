@@ -24,7 +24,6 @@ import org.jetbrains.annotations.NotNull;
 import static com.chalwk.Config.ON_PLUGIN_DISABLE;
 import static com.chalwk.Config.ON_PLUGIN_ENABLE;
 import static com.chalwk.Misc.Log;
-import static com.chalwk.Misc.hasPermission;
 import static com.chalwk.listener.Commands.commandHandler;
 
 public final class BigBrother extends JavaPlugin implements Listener {
@@ -74,16 +73,9 @@ public final class BigBrother extends JavaPlugin implements Listener {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
-        if (!(sender instanceof Player)) {
+        if (!(sender instanceof Player))
             return false;
-        }
 
-        Player player = (Player) sender;
-        if (hasPermission(player, "bigbrother.use")) {
-            commandHandler(sender, args);
-        }
-
-        return true;
+        return commandHandler(sender, args);
     }
 }
