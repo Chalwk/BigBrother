@@ -10,8 +10,8 @@ import com.chalwk.Spy.AnvilSpy;
 import com.chalwk.Spy.BookSpy;
 import com.chalwk.Spy.PortalSpy;
 import com.chalwk.Spy.SignSpy;
-import com.chalwk.listener.CommandPreprocess;
-import com.chalwk.listener.JoinListener;
+import com.chalwk.listeners.CommandPreprocess;
+import com.chalwk.listeners.JoinListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 import static com.chalwk.Config.ON_PLUGIN_DISABLE;
 import static com.chalwk.Config.ON_PLUGIN_ENABLE;
 import static com.chalwk.Misc.Log;
-import static com.chalwk.listener.Commands.commandHandler;
+import static com.chalwk.listeners.Commands.commandHandler;
 
 public final class BigBrother extends JavaPlugin implements Listener {
 

@@ -4,7 +4,7 @@
  * This software is licensed under the MIT License. See the LICENSE file for details.
  */
 
-package com.chalwk.listener;
+package com.chalwk.listeners;
 
 import com.chalwk.data.PlayerDataManager;
 import org.bukkit.event.EventHandler;
