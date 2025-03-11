@@ -19,7 +19,7 @@ public class CommandSpy {
         String senderName = sender.getName();
 
         for (Player admin : Bukkit.getOnlinePlayers()) {
-            if (!(admin.getName().equals(senderName)) && canUseSpyFeature(admin, "commandspy")) {
+            if (!admin.getName().equalsIgnoreCase(senderName) && canUseSpyFeature(admin, "commandspy")) {
                 String notification = COMMAND_SPY_NOTIFICATION;
                 notification = notification
                         .replace("{player}", senderName)

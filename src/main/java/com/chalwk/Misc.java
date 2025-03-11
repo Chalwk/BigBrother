@@ -60,9 +60,6 @@ public class Misc {
             case "bookspy":
                 isSpyActive = PlayerDataManager.getData(player).books;
                 break;
-            case "socialspy":
-                isSpyActive = PlayerDataManager.getData(player).social;
-                break;
             case "portalspy":
                 isSpyActive = PlayerDataManager.getData(player).portals;
                 break;

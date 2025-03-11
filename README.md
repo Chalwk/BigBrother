@@ -1,6 +1,6 @@
 # BigBrother Plugin
 
-<img src="assets/logo.png" alt="BigBrother" width="128" height="128">
+<img src="assets/logo.png" alt="BigBrother" width="256" height="256">
 
 **BigBrother** is a small admin utility plugin for Minecraft servers, offering surveillance features that allow
 administrators to monitor and track user interactions with various game objects and actions. From anvils to private
@@ -16,7 +16,6 @@ BigBrother sends notifications to admins whenever a user performs specific actio
 - **CommandSpy**: Notifies when any command is executed by a player.
 - **PortalSpy**: Notifies when a player travels through a teleport portal (e.g., Nether or End).
 - **SignSpy**: Notifies when a player interacts with a sign.
-- **SocialSpy**: Notifies when a player sends a private message.
 
 These notifications provide insight into player activities, helping maintain server integrity.
 
@@ -32,7 +31,6 @@ functionalities:
 | `signs <user>`    | Toggle sign spy for a user    |
 | `anvils <user>`   | Toggle anvil spy for a user   |
 | `books <user>`    | Toggle book spy for a user    |
-| `social <user>`   | Toggle social spy for a user  |
 | `portals <user>`  | Toggle portal spy for a user  |
 
 ### Additional Information
@@ -69,21 +67,9 @@ Each spy feature has its own set of permissions, allowing for customized control
 | **bigbrother.bookspy.***                | Grants access to book spying.                  |
 | **bigbrother.bookspy.toggle**           | Allows toggling book spy.                      |
 | **bigbrother.bookspy.toggle.others**    | Allows toggling book spy for other players.    |
-| **bigbrother.socialspy.***              | Grants access to social spying.                |
-| **bigbrother.socialspy.toggle**         | Allows toggling social spy.                    |
-| **bigbrother.socialspy.toggle.others**  | Allows toggling social spy for other players.  |
 | **bigbrother.portalspy.***              | Grants access to portal spying.                |
 | **bigbrother.portalspy.toggle**         | Allows toggling portal spy.                    |
 | **bigbrother.portalspy.toggle.others**  | Allows toggling portal spy for other players.  |
-
-## Commands That Trigger Social Spy
-
-The following commands currently trigger Social Spy notifications in BigBrother. At present, these commands are
-hardcoded and may be made configurable in future updates:
-
-`/bmsg`, `/bpm`, `/breply`, `/cmi msg`, `/cmi r`, `/cmi reply`, `/cmi t`, `/cmi tell`, `/cmi whisper`, `/emsg`, `/er`,
-`/ereply`, `/etell`, `/ewhisper`, `/m`, `/message`, `/mreply`, `/msg`, `/msgchat`, `/pm`, `/pmc`, `/privmsg`, `/r`,
-`/reply`, `/t`, `/tell`, `/whisper`
 
 ## Installation
 

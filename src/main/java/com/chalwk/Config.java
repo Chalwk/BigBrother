@@ -8,8 +8,6 @@ package com.chalwk;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import java.util.List;
-
 public class Config {
 
     public static String NO_PERMISSION;
@@ -20,7 +18,6 @@ public class Config {
     public static String BOOK_SPY_NOTIFICATION;
     public static String PORTAL_SPY_NOTIFICATION;
     public static String SIGN_SPY_NOTIFICATION;
-    public static String SOCIAL_SPY_NOTIFICATION;
     public static String COMMAND_SPY_NOTIFICATION;
 
     public static String TOGGLE_MESSAGE;
@@ -28,8 +25,6 @@ public class Config {
     public static String INVALID_MODULE;
     public static String CONFIG_RELOAD;
     public static String INVALID_PLAYER;
-
-    public static List<String> COMMAND_SPY_HIDDEN_LIST;
 
     public static void loadSettings(FileConfiguration config) {
 
@@ -41,7 +36,6 @@ public class Config {
         BOOK_SPY_NOTIFICATION = config.getString("book-spy.notification");
         PORTAL_SPY_NOTIFICATION = config.getString("portal-spy.notification");
         SIGN_SPY_NOTIFICATION = config.getString("sign-spy.notification");
-        SOCIAL_SPY_NOTIFICATION = config.getString("social-spy.notification");
         COMMAND_SPY_NOTIFICATION = config.getString("command-spy.notification");
 
         TOGGLE_MESSAGE = config.getString("toggle-message");
@@ -49,7 +43,5 @@ public class Config {
         INVALID_MODULE = config.getString("invalid-module");
         CONFIG_RELOAD = config.getString("config-reload");
         INVALID_PLAYER = config.getString("invalid-player");
-
-        COMMAND_SPY_HIDDEN_LIST = config.getStringList("command-spy.hidden");
     }
 }

@@ -36,7 +36,6 @@ permissions:
       bigbrother.signspy.*: true
       bigbrother.anvilspy.*: true
       bigbrother.bookspy.*: true
-      bigbrother.socialspy.*: true
       bigbrother.portalspy.*: true
 
   bigbrother.commandspy.*:
@@ -66,13 +65,6 @@ permissions:
     children:
       bigbrother.bookspy.toggle: true
       bigbrother.bookspy.toggle.others: true
-
-  bigbrother.socialspy.*:
-    description: Permissions for social spying
-    default: op
-    children:
-      bigbrother.socialspy.toggle: true
-      bigbrother.socialspy.toggle.others: true
 
   bigbrother.portalspy.*:
     description: Grants access to all portal spying features

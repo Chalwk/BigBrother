@@ -11,14 +11,12 @@ import org.bukkit.entity.Player;
 
 public class PlayerData {
 
-    private Player lastMessagedPlayer;
     private final Player player;
     public boolean activationState;
     public boolean commands;
     public boolean signs;
     public boolean anvils;
     public boolean books;
-    public boolean social;
     public boolean portals;
 
     public PlayerData(Player player) {
@@ -28,7 +26,6 @@ public class PlayerData {
         this.anvils = true;
         this.books = true;
         this.signs = true;
-        this.social = true;
         this.portals = true;
     }
 
@@ -60,19 +57,7 @@ public class PlayerData {
         this.signs = signs;
     }
 
-    public void setSocial(boolean social) {
-        this.social = social;
-    }
-
     public void setPortals(boolean portals) {
         this.portals = portals;
-    }
-
-    public Player getLastMessagedPlayer() {
-        return lastMessagedPlayer;
-    }
-
-    public void setLastMessagedPlayer(Player receiver) {
-        this.lastMessagedPlayer = receiver;
     }
 }
