@@ -75,9 +75,6 @@ public class Commands {
             case BOOKS:
                 currentState = !playerData.books;
                 break;
-            case SOCIAL:
-                currentState = !playerData.social;
-                break;
             case PORTALS:
                 currentState = !playerData.portals;
                 break;
@@ -110,9 +107,6 @@ public class Commands {
                 break;
             case BOOKS:
                 playerData.setBooks(!playerData.books);
-                break;
-            case SOCIAL:
-                playerData.setSocial(!playerData.social);
                 break;
             case PORTALS:
                 playerData.setPortals(!playerData.portals);

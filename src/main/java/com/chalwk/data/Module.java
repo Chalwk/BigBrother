@@ -11,7 +11,6 @@ public enum Module {
     SIGNS("signs", "bigbrother.signspy.toggle", "Sign Spy"),
     ANVILS("anvils", "bigbrother.anvilspy.toggle", "Anvil Spy"),
     BOOKS("books", "bigbrother.bookspy.toggle", "Book Spy"),
-    SOCIAL("social", "bigbrother.socialspy.toggle", "Social Spy"),
     PORTALS("portals", "bigbrother.portalspy.toggle", "Portal Spy");
 
     private final String name;

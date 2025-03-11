@@ -12,7 +12,7 @@ config-reload: "&3[&6&lBig Brother&3] &aConfiguration has been reloaded"
 no-permission: "&3[&6&lBig Brother&3] &cYou do not have permission to use this command"
 
 # Message displayed when an admin tries to toggle a module that doesn't exist:
-invalid-module: "&3[&6&lBig Brother&3] &cInvalid module. &7Valid modules: &6commands, signs, anvils, books, social"
+invalid-module: "&3[&6&lBig Brother&3] &cInvalid module. &7Valid modules: &6commands, signs, anvils, books"
 
 # Messages displayed when an admin toggles a module:
 toggle-message: "&3[&6&lBig Brother&3] &7You have &6{state} &7{module}"
@@ -22,7 +22,6 @@ invalid-player: "&3[&6&lBig Brother&3] &cInvalid player"
 #================================================================#
 command-spy:
   notification: "&3[&6&lCMD SPY&3] &7{player}: &7{cmd}"
-
 #================================================================#
 
 #================================================================#
@@ -38,11 +37,6 @@ anvil-spy:
 #================================================================#
 book-spy:
   notification: "&3[&6&lBOOK SPY&3] &7{player} &8has written: &7{text}"
-#================================================================#
-
-#================================================================#
-social-spy:
-  notification: "&3[&6&lSOCIAL SPY&3] &8[&7{sender} &8-> &7{receiver}&8]&f: {message}"
 #================================================================#
 
 #================================================================#
