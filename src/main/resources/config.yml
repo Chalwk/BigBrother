@@ -21,7 +21,7 @@ invalid-player: "&3[&6&lBig Brother&3] &cInvalid player"
 
 #================================================================#
 command-spy:
-  notification: "&3[&6&lCMD SPY&3] &7{player}: &7{cmd}"d
+  notification: "&3[&6&lCMD SPY&3] &7{player}: &7{cmd}"
   hidden:
     - ''
 
